@@ -9,8 +9,8 @@ def fib(n):
     
     return cache[n]
 
-for i in range(11):
-    print(f'{i}: {fib(i)}')
+for i in range(1,11):
+    print(f'{i}: {fib(i)} \n')
 
     
     
