@@ -1,6 +1,6 @@
 import random
 
-# list of names that are in the drawing. 
+# list of names that are in the drawing.
 givers = [
 	'Mum',
 	'Dad',
@@ -43,7 +43,7 @@ def genSecretSanta():
 				while (receiver == giver) or (receiver in excludes and giver == excludes[receiver]):
 					receiver = random.choice(receivers)
 				# Add result to array
-				result.append(giver + ' is buying for ' + receiver)
+				result.append(giver + ' Got ' + receiver)
 				# Remove the reciever from the list
 				receivers.remove(receiver)
 				
