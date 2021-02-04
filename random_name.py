@@ -2,21 +2,66 @@ import random
 
 # list of names that are in the drawing.
 givers = [
-	'Mum',
-	'Dad',
-	'Sibling1',
-	'Sibling2',
-	'Sibling3',
-	'Nan',
-	'Grandad',
-	'Auntie',
-	'Uncle',
-	'Cousin1',
-	'Cousin2'
-]
+    'Grandma',
+    'Grandpa',
+    
+    'Tom',
+    'Lori',
+    
+    'Kendall',
+    'Alica',
+    
+    'Brianna',
+    'Max MC',
+    
+    'Elijah',
+    
+    'Doug',
+    'Staci',
+    
+    'Jennifer',
+    'Brigham',
+    
+    'Rebecca',
+    'Ben',
+    
+    'Shari',
+    'Kirt',
+    
+    'Amanda',
+    'Brett',
+    
+    'Steve',
+    'Pam',
+    
+    'AJ',
+    'Jayden(Boy)',
+    'Jason',
+    'Victora',
+    'Kelsey',
+    'Tyler',
+    
+    'Randy',
+    'Kim',
+    'Darrin',
+    
+    'Jessika',
+    'Kyle',
+    
+    'Trevor',
+    'Kaela',
+    'Logan',
+    
+    'Sean',
+    'Jasmine',
+    
+    'Lena'
+    
+    
+    ]
 # people that can't get each other
 excludes = {
-	'Mum': 'Dad',
+	'Grandma': 'Grandpa',
 	'Nan': 'Grandad',
 	'Auntie': 'Uncle'
 }
