@@ -28,6 +28,9 @@ givers = [
     'Shari',
     'Kirt',
     
+    'Jake',
+    'Kari',
+    
     'Amanda',
     'Brett',
     
@@ -35,35 +38,45 @@ givers = [
     'Pam',
     
     'AJ',
+    
     'Jayden(Boy)',
+    
     'Jason',
     'Victora',
+    
     'Kelsey',
+    
     'Tyler',
     
     'Randy',
     'Kim',
+    
     'Darrin',
     
     'Jessika',
     'Kyle',
     
+    'Ryan',
+    
     'Trevor',
-    'Kaela',
     'Logan',
     
     'Sean',
     'Jasmine',
     
-    'Lena'
+    'Lena',
     
+    'Lisa',
+    'Jacob',
+    
+    'Leanne'
     
     ]
 # people that can't get each other
 excludes = {
 	'Grandma': 'Grandpa',
-	'Nan': 'Grandad',
-	'Auntie': 'Uncle'
+	'Tom': 'Lori',
+	'Kendall': 'Alica'
 }
 
 def genSecretSanta():
@@ -88,12 +101,14 @@ def genSecretSanta():
 				while (receiver == giver) or (receiver in excludes and giver == excludes[receiver]):
 					receiver = random.choice(receivers)
 				# Add result to array
-				result.append(giver + ' Got ' + receiver)
+				result.append(giver + ', ' + receiver)
 				# Remove the reciever from the list
 				receivers.remove(receiver)
-				
+	myFile = open('names.csv', 'w')
+	myFile.write('Giver' + ', ' + 'Reciver' + '\n')
 	for r in result:
-		print (r)
+		myFile.write(r + '\n')
+	myFile.close()
 
 def main():
 	genSecretSanta()
