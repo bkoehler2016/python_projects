@@ -76,7 +76,21 @@ givers = [
 excludes = {
 	'Grandma': 'Grandpa',
 	'Tom': 'Lori',
-	'Kendall': 'Alica'
+	'Kendall': 'Alica',
+    'Brianna' : 'Max MC',
+    'Doug' : 'Staci',
+    'Jennifer' : 'Brigham',
+    'Rebecca' : 'Ben',
+    'Shari' : 'Kirt',
+    'Jake' : 'Kari',
+    'Amanda' : 'Brett',
+    'Steve' : 'Pam',
+    'Jason' : 'Victora',
+    'Randy' : 'Kim',
+    'Jessika' : 'Kyle',
+    'Trevor' : 'Logan',
+    'Sean' : 'Jasmine',
+    'Lisa' : 'Jacob'
 }
 
 def genSecretSanta():
