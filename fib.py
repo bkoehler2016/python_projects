@@ -1,16 +1,18 @@
-cache = {}
+from functools import __cached__, lru_cache
 
+
+@lru_cache(maxsize=5)
 def fib(n):
-    if n == 0: return 0
-    if n == 1: return 1
-    
-    if n not in cache:
-        cache[n] = fib(n-1) + fib(n-2)
-    
-    return cache[n]
+    if n <= 1:
+        return n
+    return fib(n - 1) + (n - 2)
 
-for i in range(1,11):
-    print(f'{i}: {fib(i)} \n')
 
-    
-    
+def main():
+    for i in range(11):
+        print(i, fib(i))
+    print("done")
+
+
+if __name__ == '__main__':
+    main()

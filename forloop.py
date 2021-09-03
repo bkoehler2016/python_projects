@@ -2,7 +2,7 @@
 a way to print objects in a list
 """
 
-a = ["Jared", 13, "Mary", 14, "Brigham", 12, "Ashley", 3, "Ben", 4] 
+a = ["Jared", 13, "Rebecca", 14, "Brigham", 12, "Jenn", 3, "Ben", 4] 
   
 # printing the list using * operator separated  
 # by space
